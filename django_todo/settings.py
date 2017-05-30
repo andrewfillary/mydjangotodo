@@ -26,7 +26,7 @@ SECRET_KEY = '0%(17=l&i!5m*-*-d1k5rm+a@e4^1n6@8$5_dvl99j0e7e=^a4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mydjangotodo.herokuapp.com']
 
 
 # Application definition
@@ -138,3 +138,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = ''
+#config:set DISABLE_COLLECTSTATIC=1
