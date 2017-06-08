@@ -102,6 +102,7 @@ DATABASES = {
 
 DATABASES['default'] = dj_database_url.config("mysql://bec62034fc0bea:78d68f37@eu-cdbr-west-01.cleardb.com/heroku_90d59dc59ec4fbc?reconnect=true")
 
+#DATABASES['default']['ENGINE'] = 'django.db.backends.mysql'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
