@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0%(17=l&i!5m*-*-d1k5rm+a@e4^1n6@8$5_dvl99j0e7e=^a4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['mydjangotodo.herokuapp.com']
 
@@ -100,9 +100,9 @@ DATABASES = {
      }
 }
 
-DATABASES['default'] = dj_database_url.config("mysql://bec62034fc0bea:78d68f37@eu-cdbr-west-01.cleardb.com/heroku_90d59dc59ec4fbc")
+DATABASES['default'] = dj_database_url.config(default="mysql://bec62034fc0bea:78d68f37@eu-cdbr-west-01.cleardb.com/heroku_90d59dc59ec4fbc")
 
-# DATABASES['default']['ENGINE'] = 'django.db.backends.mysql'
+DATABASES['default']['ENGINE'] = 'django.db.backends.mysql'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
