@@ -93,16 +93,16 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
-DATABASES['default'] = dj_database_url.config("mysql://bec62034fc0bea:78d68f37@eu-cdbr-west-01.cleardb.com/heroku_90d59dc59ec4fbc?reconnect=true")
+DATABASES['default'] = dj_database_url.config("mysql://bec62034fc0bea:78d68f37@eu-cdbr-west-01.cleardb.com/heroku_90d59dc59ec4fbc")
 
-#DATABASES['default']['ENGINE'] = 'django.db.backends.mysql'
+# DATABASES['default']['ENGINE'] = 'django.db.backends.mysql'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
